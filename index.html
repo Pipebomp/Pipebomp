@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pipebomp</title>
+</head>
+<style>
+    .patu {
+        background-color: white;
+        border: 2px solid black;
+        color: rgb(9, 80, 156);
+        padding: 5px 5px;
+        text-align: right;
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: block;
+        height: 125px;
+        width: 125px;
+        text-indent: -999em;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <button value="PLAY" onclick="play()"><img src="imagens/pepebom.png"></button>
+    <audio id="audio" src="audios/bomba.mp3"></audio>
+    <button class="patu" 
+    onclick="window.location.href = './pato/pato.html';">
+        mr eggs
+    </button>
+
+    <script>
+
+        function play() {
+
+            var audio = document.getElementById("audio");
+            audio.play();
+
+        }
+       
+    </script>
+    <h1>qualquer merda</h1>
+</body>
+</html>
