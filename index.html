@@ -36,21 +36,10 @@
     </button>
 
     <script>
-        {
-        myAudio = new Audio('hey ya.mp3'); 
-if (typeof myAudio.loop == 'boolean')
-{
-    myAudio.loop = true;
-}
-else
-{
-    myAudio.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-    }, false);
-}
-        }
-myAudio.play();
+         function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
     </script>
     <h1>qualquer merda</h1>
 </body>
