@@ -1,48 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pato</title>
     <style>
     body, html {
         height: 100%;
       }
       
       .bg {
-        /* The image used */
+        
         background-image: url("dance.gif");
       
-        /* Full height */
         height: 100%;
       
-        /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
       }
 
       </style>
-</head>
 <body>
-    <div class="bg"></div>
 
-    <script>
-    myAudio = new Audio('hey ya.mp3'); 
-if (typeof myAudio.loop == 'boolean')
-{
-    myAudio.loop = true;
-}
-else
-{
-    myAudio.addEventListener('ended', function() {
-        this.currentTime = 0;
-        this.play();
-    }, false);
-}
-myAudio.play();
-</script>
+    <div class="bg"></div>
+    <embed src="heyya.mp3" loop="true" autostart="true" width="2"
+         height="0">
 
 </body>
 </html>
